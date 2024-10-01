@@ -53,6 +53,7 @@ namespace ApiGateway
 
             HttpClient client = new HttpClient();
             HttpRequestMessage newRequest = new HttpRequestMessage(new HttpMethod(request.Method), CreateDestinationUri(request));
+            newRequest.Content = new StringContent(requestContent, Encoding.UTF8, request.ContentType);
             HttpResponseMessage response = await client.SendAsync(newRequest);
 
             return response;
@@ -64,7 +65,7 @@ namespace ApiGateway
 
             // Создаем запрос на аутентификацию с токеном, используя базовый URI
             HttpRequestMessage authRequest = new HttpRequestMessage(HttpMethod.Get, this.Uri);
-            authRequest.Headers.Add("token", token);
+            authRequest.Headers.Add("Authorization", token);
 
             HttpResponseMessage response = await client.SendAsync(authRequest);
             return response;
