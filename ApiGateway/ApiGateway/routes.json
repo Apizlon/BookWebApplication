@@ -1,0 +1,21 @@
+{
+  "routes": [
+    {
+      "endpoint": "/Book",
+      "destination": {
+        "uri": "https://localhost:7106/api/Book/",
+        "requiresAuthentication": "true"
+      }
+    },
+    {
+      "endpoint": "/posts",
+      "destination": {
+        "uri": "http://localhost:8080/posts/",
+        "requiresAuthentication": "true"
+      }
+    }
+  ],
+  "authenticationService": {
+    "uri":  "https://localhost:7232/api/Authentication/verify"
+  }
+}
