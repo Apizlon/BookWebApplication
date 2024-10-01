@@ -48,8 +48,8 @@ public class AuthenticationController : ControllerBase
 
         return Ok(token);
     }
-    [HttpGet("verify")]
     
+    [HttpGet("verify")]
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public async Task<IActionResult> VerifyToken()
     {
