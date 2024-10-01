@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserApi.Core", "UserApi.Cor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserApi.DataAccess", "UserApi.DataAccess\UserApi.DataAccess.csproj", "{B98FB9E8-50AA-4A44-BB23-19232E5B6E16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserApi.Aplication", "UserApi.Aplication\UserApi.Aplication.csproj", "{32818EEA-532E-4050-BB05-86FDE480CAE6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserApi.Application", "UserApi.Application\UserApi.Application.csproj", "{32818EEA-532E-4050-BB05-86FDE480CAE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

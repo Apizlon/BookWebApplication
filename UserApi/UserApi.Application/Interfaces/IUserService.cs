@@ -1,6 +1,6 @@
-﻿using UserApi.Aplication.Contracts;
+﻿using UserApi.Application.Contracts;
 
-namespace UserApi.Aplication.Interfaces;
+namespace UserApi.Application.Interfaces;
 
 public interface IUserService
 {

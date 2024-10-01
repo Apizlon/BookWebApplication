@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using UserApi.Aplication.Contracts;
-using UserApi.Aplication.Interfaces;
+using UserApi.Application.Contracts;
+using UserApi.Application.Interfaces;
 
 namespace UserApi.Api.Controllers;
 

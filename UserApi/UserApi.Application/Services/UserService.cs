@@ -1,10 +1,10 @@
-﻿using UserApi.Aplication.Contracts;
-using UserApi.Aplication.Interfaces;
-using UserApi.Aplication.Mappers;
+﻿using UserApi.Application.Contracts;
+using UserApi.Application.Interfaces;
+using UserApi.Application.Mappers;
 using UserApi.Core.Exceptions;
 using UserApi.DataAccess.Interfaces;
 
-namespace UserApi.Aplication.Services;
+namespace UserApi.Application.Services;
 
 public class UserService : IUserService
 {
