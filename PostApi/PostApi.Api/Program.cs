@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using PostApi.Api.Middlewares;
 using PostApi.Application.Interfaces;
+using PostApi.Application.Kafka;
 using PostApi.Application.Services;
 using PostApi.DataAccess;
 using PostApi.DataAccess.Interfaces;
@@ -20,6 +21,8 @@ builder.Services.AddDbContext<PostDbContext>(options =>
 
 builder.Services.AddScoped<IPostRepository, PostRepository>();
 builder.Services.AddScoped<IPostService,PostService>();
+builder.Services.AddSingleton<IKafkaProducer>(new KafkaProducer("localhost:9092"));
+builder.Services.AddSingleton<IKafkaConsumer>(new KafkaConsumer("localhost:9092"));
 builder.Services.AddTransient<CustomExceptionHandlingMiddleware>();
 
 var app = builder.Build();

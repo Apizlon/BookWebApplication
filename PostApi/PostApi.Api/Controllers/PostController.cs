@@ -36,7 +36,7 @@ public class PostController : ControllerBase
         return Ok(posts);
     }
 
-    [HttpPatch("{id:int}")]
+    [HttpPut("{id:int}")]
     public async Task<IActionResult> UpdatePostAsync(int id, PostRequest postRequest)
     {
         await _postService.UpdatePostAsync(id, postRequest);
