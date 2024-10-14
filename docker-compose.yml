@@ -37,5 +37,5 @@ services:
       KAFKA_CLUSTERS_0_ZOOKEEPER: zookeeper:2181
   
   
-  volumes:
-     kafka-data:
+volumes:
+    kafka-data:
